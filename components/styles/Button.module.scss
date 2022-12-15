@@ -1,0 +1,19 @@
+.mybutton{
+    height: 40px;
+    width: 125px;
+    color: black;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #E1FFEE;
+    border: 0px solid black;
+    font-size: 0.8em;
+    transition: 0.3s all ease;
+
+    &:hover{
+        border: none;
+        color: whitesmoke;
+        background-color: #3b4c7a;
+        border-radius: 13px;
+        font-size: 0.9em;
+    }
+}

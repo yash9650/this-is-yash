@@ -1,0 +1,31 @@
+.mycontainer{
+  height: 100%;
+  width: 100%;
+}
+
+.mysection{
+  height: 100vh;
+  /* width: 100vw; */
+  scroll-snap-align: start;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+.mysection:nth-of-type(1){
+  height: calc(100vh - 60px);
+  scroll-margin-top: 65px;
+  background-image: url('https://wallpaperaccess.com/full/1657858.jpg');
+
+}
+
+
+.mysection:nth-of-type(2){
+  background-image: url('https://media.istockphoto.com/id/1353613598/photo/abstract-layered-background-with-wavy-curvy-shapes-blue-bended-multi-layers-effect-isolated.jpg?b=1&s=170667a&w=0&k=20&c=ADmFCIKmR5PjHJXSR1M-CDRUutJY8QZIrlpUHolDock=');
+}
+
+.mysection:nth-of-type(3){
+  background-image: url('https://innovatewebdevelopment.com/wp-content/uploads/2020/10/main-bg.jpg');
+  background-size: cover;
+}

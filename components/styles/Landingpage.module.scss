@@ -1,0 +1,105 @@
+.landingpagecontainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+
+    .detailblock {
+        display: flex;
+        flex-direction: column;
+        .heading {
+            display: inline-block;
+            color: antiquewhite;
+            width: 310px;
+        }
+
+        .block {
+            display: inline;
+            color: lightslategray;
+        }
+    }
+
+    .imgblock {
+        height: 300px;
+        width: 250px;
+        border-radius: 50%;
+        background-image: url('../../public/myImg.jpeg');
+        background-size: cover;
+        background-position: bottom;
+        position: absolute;
+        left: 70%;    
+    }
+
+    @media screen and (max-width: 600px) {
+        .imgblock{
+            bottom: 10%;
+        }
+    }
+}
+
+$base: 0.6rem;
+
+.container {
+ position: absolute;
+ bottom: 0%;
+ left: 50%;
+ transform: rotate(180deg);
+ cursor: pointer;
+}
+
+.chevron {
+  position: absolute;
+  width: $base * 3.5;
+  height: $base * 0.8;
+  opacity: 0;
+  transform: scale(0.3);
+  animation: move-chevron 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move-chevron 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move-chevron 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+ content: '';
+ position: absolute;
+ top: 0;
+ height: 100%;
+ width: 50%;
+ background: #2c3e50;
+}
+
+.chevron:before {
+ left: 0;
+ transform: skewY(30deg);
+}
+
+.chevron:after {
+ right: 0;
+ width: 50%;
+ transform: skewY(-30deg);
+}
+
+@keyframes move-chevron {
+ 25% {
+  opacity: 1;
+	}
+ 33.3% {
+  opacity: 1;
+  transform: translateY($base * 3.8);
+ }
+ 66.6% {
+  opacity: 1;
+  transform: translateY($base * 5.2);
+ }
+ 100% {
+  opacity: 0;
+  transform: translateY($base * 8) scale(0.5);
+ }
+}

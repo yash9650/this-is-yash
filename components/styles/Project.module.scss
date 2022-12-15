@@ -1,0 +1,46 @@
+.projectcontainer {
+    height: 100%;
+    width: 100%;
+    // background-image: url("https://media.istockphoto.com/id/1326304939/vector/studio-room-in-dark-blue-background-with-copy-space-luxury-gallery-empty-room-abstract.jpg?b=1&s=612x612&w=0&k=20&c=plNH4hClpIf6DEpGsRURkfuCWkybwvggpyCQJSF1kMg=");
+    // background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .projectblock {
+        width: 80%;
+        height: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .project {
+            height: 95%;
+            width: 30%;
+            border-radius: 10px;
+            transition: transform 0.25s ease-in,box-shadow 0.25s ease-in;
+            opacity: 0.85;
+            
+            &:nth-of-type(1){
+                background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190619/ourmid/pngtree-shopping-mall-supermarket-selection-merchandise-poster-background-material-image_133225.jpg");                
+                // background-position: right;
+                background-size: cover;
+            }
+            &:nth-of-type(2){
+                background-image: url("https://media.istockphoto.com/id/1165046681/photo/healthcare-business-graph-and-medical-examination-and-businessman-analyzing-data-and-growth.jpg?b=1&s=170667a&w=0&k=20&c=amfMlJCKcttb9RZrJ1LnHpwuJXWvCtlmS3vPMxTAgv0=");
+                
+            }
+            &:nth-of-type(3){
+                background-image: url("https://cdn.dribbble.com/users/1003944/screenshots/15741863/06_comp_1_4x.gif?compress=1&resize=400x300&vertical=top");
+                
+            }
+
+            &:hover{
+                transform: translateY(-5px);
+                box-shadow: 5px 8px 10px rgba(48, 103, 134, 0.747);
+                cursor: pointer;
+            }
+        }
+    }
+}
