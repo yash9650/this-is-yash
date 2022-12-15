@@ -8,7 +8,7 @@ export default function LandingPage() {
                 <div className={classes.detailblock}>
                     <h1 className={classes.heading}>
                         Hi,
-                        I'm Yash,<br />
+                        I&apos;m Yash,<br />
                         Web Developer
                     </h1><br />
                     <span className={classes.block}>
