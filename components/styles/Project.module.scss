@@ -42,5 +42,20 @@
                 cursor: pointer;
             }
         }
+
+        @media screen and (max-width: 800px) {
+            &{
+                flex-direction: column;
+                height: 80%;
+            }
+            .project{
+                height: 30%;
+                width: 100%;
+
+                .article{
+                    font-size: small;
+                }
+            }
+        }
     }
 }
