@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import classes from "./styles/Landingpage.module.scss";
 import CustomButton from "./ui/Button";
 
@@ -19,9 +20,11 @@ export default function LandingPage() {
         <div className={classes.imgblock}></div>
       </div>
       <div className={classes.container}>
-        <div className={classes.chevron}></div>
-        <div className={classes.chevron}></div>
-        <div className={classes.chevron}></div>
+        <Link to="about" spy={true} smooth={true}>
+          <div className={classes.chevron}></div>
+          <div className={classes.chevron}></div>
+          <div className={classes.chevron}></div>
+        </Link>
       </div>
     </>
   );

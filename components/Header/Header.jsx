@@ -21,16 +21,15 @@ export default function Header() {
     };
   }, []);
 
-  // opacity-75 rounded-pill
   return (
     <Navbar
-      sticky="top"
       expand="lg"
-      className={trans ? "" : ""}
-      bg={trans ? "dark opacity-75" : "dark"}
-      variant={trans ? "dark" : "dark"}
+      fixed="top"
+      className={`bg-dark ${trans ? 'bg-opacity-75' : "" }`}
+      // variant={trans ? "light" : "light"}
+      variant="dark"
     >
-      <Container>
+      <Container className="">
         <Navbar.Brand as={Link} to="myhome">
           <img
             alt=""
@@ -51,7 +50,7 @@ export default function Header() {
               spy={true}
               smooth={true}
               offset={-70}
-              duration={50}
+              duration={300}
             >
               Home
             </Nav.Link>
@@ -62,7 +61,7 @@ export default function Header() {
               spy={true}
               smooth={true}
               offset={0}
-              duration={50}
+              duration={300}
             >
               About
             </Nav.Link>
@@ -73,15 +72,16 @@ export default function Header() {
               spy={true}
               smooth={true}
               offset={0}
-              duration={50}
+              duration={300}
             >
               Projects
             </Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link href="#instagram">@this.is.yash</Nav.Link>
+            <Nav.Link target="_blank" rel="noopener noreferrer" href="https://github.com/yash9650">Github</Nav.Link>
             <Nav.Link
               eventKey={2}
+              target="_blank" rel="noopener noreferrer"
               href="https://www.linkedin.com/in/yash-gupta-985b4718b"
             >
               LinkedIn
