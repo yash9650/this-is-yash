@@ -8,14 +8,14 @@
         background-color: white;
         border-radius: 10px;
         box-shadow: 5px 10px 5px #888888;
-        height: 55%;
+        height: 15em;
         width: 30%;
         border: 1px solid black;
         padding: 12px;
         position: relative;
         flex-direction: row;
         flex-wrap: wrap;
-        top: 10rem;
+        top: 30%;
         left: 60%;
         margin: 0;
         
@@ -32,12 +32,14 @@
         .aboutblock{
             left: 50%;
             width: 40%;
+            height: 15em;
         }
     }
     @media screen and (max-width: 700px){
         .aboutblock{
             left: 40%;
             width: 45%;
+            height: 18em;
         }
     }
     @media screen and (max-width: 600px){
