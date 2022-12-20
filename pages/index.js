@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>this.is.yash</title>
-        <meta name="description" content="this is my personal website" />
+        <title>Yash Gupta</title>
+        <meta name="description" content="Hi, I am Yash Gupta.... This is my portfolio website" />
         <link rel="icon" href="/logo2.png" />
       </Head>
       <Header />
