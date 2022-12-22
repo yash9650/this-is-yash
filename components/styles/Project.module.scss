@@ -4,12 +4,24 @@
   // background-image: url("https://media.istockphoto.com/id/1326304939/vector/studio-room-in-dark-blue-background-with-copy-space-luxury-gallery-empty-room-abstract.jpg?b=1&s=612x612&w=0&k=20&c=plNH4hClpIf6DEpGsRURkfuCWkybwvggpyCQJSF1kMg=");
   // background-size: cover;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
+  h1 {
+    font-weight: bold;
+    // background: -webkit-linear-gradient(#eee, #333);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    // text-transform: uppercase;
+    background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2em;
+  }
   .projectblock {
     width: 80%;
-    height: 80%;
+    height: 50%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -42,7 +54,7 @@
         box-shadow: 5px 8px 10px rgba(48, 103, 134, 0.747);
         cursor: pointer;
       }
-      
+
       @media screen and (max-width: 1100px) {
         & {
           height: 18em;
@@ -58,6 +70,7 @@
       & {
         flex-direction: column;
         height: 75%;
+        
         .project {
           height: 8em;
           width: 100%;
@@ -68,7 +81,7 @@
         }
       }
     }
-    @media screen and (max-width: 600px) and ( min-height: 600px) {
+    @media screen and (max-width: 600px) and (min-height: 680px) {
       & {
         .project {
           height: 10em;
@@ -78,6 +91,13 @@
             font-size: small;
           }
         }
+      }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    &{
+      h1{
+        margin: 0;
       }
     }
   }

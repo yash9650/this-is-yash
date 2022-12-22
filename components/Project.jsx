@@ -2,7 +2,9 @@ import classes from "./styles/Project.module.scss";
 
 export default function Project() {
   return (
+    // <div className={classes.block}>
     <div className={classes.projectcontainer}>
+      <h1>My Projects</h1>
       <div className={classes.projectblock}>
         <a
           className={classes.project}
@@ -51,5 +53,6 @@ export default function Project() {
         </a>
       </div>
     </div>
+    // </div>
   );
 }
