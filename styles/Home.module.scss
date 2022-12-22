@@ -5,7 +5,6 @@
 
 .mysection{
   height: 100vh;
-  /* width: 100vw; */
   scroll-snap-align: start;
   background-position: center;
   background-size: cover;
@@ -22,8 +21,10 @@
 
 
 .mysection:nth-of-type(2){
-  background-image: url('https://media.istockphoto.com/id/1353613598/photo/abstract-layered-background-with-wavy-curvy-shapes-blue-bended-multi-layers-effect-isolated.jpg?b=1&s=170667a&w=0&k=20&c=ADmFCIKmR5PjHJXSR1M-CDRUutJY8QZIrlpUHolDock=');
+  background-image: url('../public/yash_1.jpg');
+  // https://media.istockphoto.com/id/1353613598/photo/abstract-layered-background-with-wavy-curvy-shapes-blue-bended-multi-layers-effect-isolated.jpg?b=1&s=170667a&w=0&k=20&c=ADmFCIKmR5PjHJXSR1M-CDRUutJY8QZIrlpUHolDock=
 }
+
 
 .mysection:nth-of-type(3){
   background-image: url('https://innovatewebdevelopment.com/wp-content/uploads/2020/10/main-bg.jpg');

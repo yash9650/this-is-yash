@@ -5,12 +5,12 @@
     // justify-content: center;
 
     .aboutblock{
-        background-color: white;
+        background-color: rgba(34, 34, 34, 0.479);
         border-radius: 10px;
-        box-shadow: 5px 10px 5px #888888;
+        box-shadow: 5px 10px 7px #444141;
         height: 15em;
         width: 30%;
-        border: 1px solid black;
+        border: 1px solid rgba(255, 255, 255, 0.527);
         padding: 12px;
         position: relative;
         flex-direction: row;
@@ -21,10 +21,12 @@
         
         h2{
             margin-bottom: 15px;
+            color: grey;
+            font-weight: bold;
         }
         
         span{
-            color: #888888;
+            color: white;
         }
     }
 
